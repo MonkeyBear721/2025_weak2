@@ -1,0 +1,216 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%; /*上方寫最大，有需要的寫固定，這樣需要的部分可以滿版*/
+  font-family: Noto Sans TC;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.pagesetting {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.navbar_leftside {
+  display: flex;
+}
+.logo {
+  width: 129px;
+  font-size: 20px;
+  font-family: "Mina", sans-serif;
+  color: #212529;
+  padding-right: 48px;
+  font-weight: bold;
+  position: relative;
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 29px;
+  width: 8px;
+  height: 8px;
+  background-color: #c0fa73;
+  border-radius: 50%;
+  opacity: 80%;
+}
+.navbar_text {
+  display: flex;
+}
+.navbar_tag {
+  padding-right: 40px;
+  font-weight: 500;
+}
+.bi.bi-person {
+  font-size: 24px;
+  color: #212529;
+}
+
+.tab_bar {
+  padding-top: 32px;
+  margin: 0 auto;
+}
+.tab_bar_index {
+  color: #6c757d;
+}
+.tab_bar_sign {
+  color: #dee2e6;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.tab_bar_boldtitle {
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 28px;
+  line-height: 120%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.list {
+  width: 196px;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+.list_tag {
+  height: 48px;
+  line-height: 150%;
+  list-style: 5%;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+.green {
+  color: #57a203;
+}
+.main_content_area {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.shoe_cards_all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.shoe_cards {
+  width: 33.3333%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  padding-right: 12px;
+  padding-left: 12px;
+  /* 最右側還需要扣掉24or12px */
+}
+.shoe_cards_name {
+  font-weight: bold;
+  color: #212529;
+  line-height: 120%;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.shoe_cards_money {
+  color: #212529;
+  line-height: 150%;
+}
+
+.page {
+  display: flex;
+}
+.page_ul_last {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page_li_last {
+  height: 40px;
+  width: 40px;
+  margin-right: 4px;
+  margin-left: 4px;
+  text-align: center;
+  line-height: 40px;
+}
+.bi-chevron-left,
+.bi-chevron-right {
+  font-size: 20px;
+}
+.bi-chevron-left {
+  opacity: 40%;
+}
+.page_btn_last {
+  margin-right: 8px;
+}
+.page_btn_next {
+  margin-left: 8px;
+}
+.lightgreen {
+  background-color: #c0fa73;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discount_bar {
+  width: 100%;
+  background-color: #e8fec5;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+  margin-top: 80px;
+  padding-top: 33.5px;
+  padding-bottom: 33.5px;
+}
+.discount_bar_join {
+  padding-right: 24px;
+}
+.discount_bar_btn {
+  width: 115px;
+  height: 48px;
+  background-color: #212529;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.navbar_leftside.between {
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 36px;
+}
+.footer_content {
+  margin: 0 auto;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 150%;
+}
+.copyright {
+  width: 100%;
+  border-top: 1px solid #dee2e6;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  text-align: center;
+}
